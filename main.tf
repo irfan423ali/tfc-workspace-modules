@@ -2,6 +2,7 @@ variable "name" {}
 variable "location" {}
 variable "username" {}
 variable "password" {}
+variable "nedvar" {}
 
 provider "azurerm" {
   features {}
