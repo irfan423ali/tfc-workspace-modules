@@ -2,7 +2,9 @@ variable "name" {}
 variable "location" {}
 variable "username" {}
 variable "password" {}
-variable "nedvar" {}
+variable "nedvar" {
+  default = "taco"
+}
 
 provider "azurerm" {
   features {}
