@@ -2,9 +2,6 @@ variable "name" {}
 variable "location" {}
 variable "username" {}
 variable "password" {}
-variable "nedvar" {
-  default = "taco"
-}
 
 provider "azurerm" {
   features {}
@@ -19,8 +16,8 @@ variable "subnet_address_prefixes" {
 }
 
 module "networking" {
-  source  = "app.terraform.io/taco-co/networking/azurerm"
-  version = ">=0.13.0"
+  source  = "app.terraform.io/08012022/networking/azurerm"
+  version = "~> 1.0"
 
   name                    = var.name
   location                = var.location
